@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Run C++",
+    "command": "g++",
+    "args": [
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "$ZED_FILE",
+      "-o",
+      "$ZED_DIRNAME/a.out",
+      "&&",
+      "$ZED_DIRNAME/a.out",
+      "&&",
+      "rm $ZED_DIRNAME/a.out"
+    ],
+    "cwd": "$ZED_DIRNAME",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "always"
+  }
+]
